@@ -36,6 +36,17 @@ const Search = () => {
                 text-center">
                     Any Week
                 </div>
+                <div className="
+                text-sm
+                pl-6
+                pr-2
+                text-gry-600
+                flex
+                flex-row
+                items-center
+                gap-3">
+                    
+                </div>
             </div>
         </div>
      );
