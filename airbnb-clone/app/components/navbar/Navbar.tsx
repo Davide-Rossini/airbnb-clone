@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="py-4
             border-b-[1px]">
                 <Container>
-                    
+                    Chils
                 </Container>
             </div>
         </div>
