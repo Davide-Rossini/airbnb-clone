@@ -29,7 +29,7 @@ const UserMenu = () => {
                 ">
                     Airbnb your home
                 </div>
-                <div onClick={() => {}}
+                <div onClick={toggleOpen}
                 className="
                 p-4
                 md:py-1
@@ -51,6 +51,22 @@ const UserMenu = () => {
                     </div>
                 </div>
             </div>
+            {isOpen && (
+                <div
+                className="
+                absolute
+                rounded-xl
+                shadow-md
+                w-[40vw]
+                md:w-3/4
+                bg-white
+                overflow-hidden
+                right-0
+                top-12
+                text-sm">
+
+                </div>
+            )}
         </div>
      );
 }
