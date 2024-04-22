@@ -1,6 +1,7 @@
 'use client';
 
 import { AiOutlineMenu } from "react-icons/ai";
+import Avatar from "../Avatar";
 
 const UserMenu = () => {
     return ( 
@@ -37,6 +38,10 @@ const UserMenu = () => {
                 hover:shadow-md
                 transition">
                     <AiOutlineMenu/>
+                    <div className="hidden md:block">
+                        <Avatar/>
+
+                    </div>
                 </div>
             </div>
         </div>
