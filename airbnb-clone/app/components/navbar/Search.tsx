@@ -45,7 +45,11 @@ const Search = () => {
                 flex-row
                 items-center
                 gap-3">
-                    
+                    <div className="
+                    hidden
+                    sm:block">
+                        Add Guests
+                    </div>
                 </div>
             </div>
         </div>
