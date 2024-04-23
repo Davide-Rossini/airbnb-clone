@@ -139,7 +139,7 @@ const Modal: React.FC<ModalProps> = ({
                                 items-center
                                 gap-4
                                 w-full">
-                                    <Button/>
+                                    <Button label="My button"/>
                                 </div>
 
                             </div>
