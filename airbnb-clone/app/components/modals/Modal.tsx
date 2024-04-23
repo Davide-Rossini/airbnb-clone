@@ -124,8 +124,11 @@ const Modal: React.FC<ModalProps> = ({
                                 </button>
                                 <div className="
                                 text-lg font-semibold">
-                                    Login Modal
+                                    {title}
                                 </div>
+                            </div>
+                            <div className="relative p-6 flex-auto">
+                                {body}
                             </div>
                         </div>
 
