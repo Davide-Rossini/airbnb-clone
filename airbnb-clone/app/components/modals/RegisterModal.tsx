@@ -10,11 +10,12 @@ import {
     useForm
 } from 'react-hook-form';
 import useRegisterModal from '@/app/hooks/useRegisterModal';
+import Modal from './Modal';
 
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
-    const [loading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const{
         register,
@@ -42,12 +43,19 @@ const RegisterModal = () => {
         .finally(() => {
             setIsLoading(false);
         })
-        
+
     }
 
 
     return ( 
-        <div></div>
+        <Modal
+            disabled={isLoading}
+            isOpen={registerModal.isOpen}
+            title='Register'
+            actionLabel='Continue'
+            onClose={registerModal.onClose}
+            onSubmit={handleSubmit(onSubmit)}
+        />
      );
 }
  
