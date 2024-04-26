@@ -14,7 +14,7 @@ import useRegisterModal from '@/app/hooks/useRegisterModal';
 
 const RegisterModal = () => {
     const registerModal = useRegisterModal();
-    const [loading, setLoading] = useState(false);
+    const [loading, setIsLoading] = useState(false);
 
     const{
         register,
@@ -28,6 +28,14 @@ const RegisterModal = () => {
             password: '',
         }
     });
+
+    const onSubmit: SubmitHandler<FieldValues> = (data) =>{
+        setIsLoading(true);
+
+        axios.post('/api/register', data)
+    }
+
+
     return ( 
         <div></div>
      );
