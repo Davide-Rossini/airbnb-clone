@@ -46,6 +46,12 @@ const RegisterModal = () => {
 
     }
 
+    const bodyContent = (
+        <div className='flex flex-col gap-4'>
+            
+        </div>
+    )
+
 
     return ( 
         <Modal
@@ -55,8 +61,9 @@ const RegisterModal = () => {
             actionLabel='Continue'
             onClose={registerModal.onClose}
             onSubmit={handleSubmit(onSubmit)}
+            
         />
-     );
+    );
 }
  
 export default RegisterModal;
